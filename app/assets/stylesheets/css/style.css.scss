@@ -40,7 +40,7 @@ body {
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-color:#0A1927;
-    background-image:url("bg6.png");
+    background-image:asset-url("bg6.png");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,7 +129,7 @@ input, .btn {
     bottom:50px;
     right:100px;
     display:none;
-    background-image:url("arrow-up.png");
+    background-image:asset-url("arrow-up.png");
     background-size:contain;
     text-indent:-9999px;
 }
@@ -194,25 +194,24 @@ input, .btn {
 }
 
 .unlock-wrapper {
-    padding:75px;
+    padding:50px;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background: url("unlockbg2.png");
+    background: asset-url("unlockbg2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .unlock-wrapper h1 {
-    margin-bottom: -30px;
+    margin-bottom: -70px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
 
 }
 
 .unlock-inner {
-    margin-top: 100px;
     position: relative;
     height: 600px;
     width: 150px;
@@ -384,7 +383,6 @@ header h5 a{
 #countdown_dashboard {
     float: right;
 	height: 110px;
-    margin:80px auto;
     /*max-width:650px;*/
     animation: fadein 3s;
     -moz-animation: fadein 3s; 
@@ -395,7 +393,7 @@ header h5 a{
 .dash {
 	width: 110px;
 	height: 114px;
-	background: transparent url('dash.png') 0 0 no-repeat;
+	background: transparent asset-url('dash.png') 0 0 no-repeat;
 	float: left;
 	margin-left: 10px;
     margin-right: 10px;
@@ -433,7 +431,6 @@ header h5 a{
 
 .iphone {
         width: 100%;
-        height: 790px;
         margin: 0px;   
 }
 
@@ -442,7 +439,7 @@ header h5 a{
 }
 
 .pic img {
-    width: 400px;
+    width: 300px;
 }
 
 .store {
@@ -557,10 +554,19 @@ header h5 a{
     color:white;
 }
 
+.features-c {
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgb(93, 169, 229);
+}
+
+#features img {
+    height: 105px;
+}
+
 #features p {
     margin-top:2em;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 #features div.item {
@@ -589,11 +595,87 @@ header h5 a{
     background: #3498db;
 }
 
+.merchant-inner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.m1 {
+    position: absolute;
+    width: 100%;
+}
+
+.md {
+    width: 70%;
+    float: left;
+}
+
+.m2 {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.m3 {
+    display: none;
+    width: 100%;
+}
+
 #merchant h2 {
     font-weight: lighter;
     text-transform: uppercase;
     text-align:center;
     margin:0 0 1em 0;
+}
+
+.merch-ex label {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box-wrapper {
+    margin: 0 auto;
+}
+
+.box1 {
+    display: inline-block;
+    margin: 0px 15px 30px 15px;
+    background: #2b7cb2;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.box2 {
+    display: inline-block;
+    margin: 0px 15px 30px 15px;
+    background: #2b7cb2;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.box3 {
+    display: inline-block;
+    margin: 0px 15px 30px 15px;
+    background: #2b7cb2;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.inner-box {
+position: absolute;
+height: 30px;
+width: 30px;
+left: 15px;
+top: 15px;
+background: white;
+}
+
+.box p {
+    font-size: 40px;
 }
 
 .belt {
@@ -619,11 +701,34 @@ header h5 a{
     -ms-animation: rotation 3s linear infinite;
 }
 
+#merchant i {
+    font-size: 120px;
+    color: white;
+}
+
+#merchant svg {
+    float: right;
+    width: 200px;
+    height: 250px;
+    fill: #FFFFFF;
+}
+
+#merchant img {
+    float: right;
+    width: 200px;
+}
+
 #merchant h3 {
     font-weight: lighter;
-    text-align:center;
+    text-align:left;
     margin:0 0 1em 0;
     font-size: 36px;
+}
+
+#merchant h4 {
+    font-weight: lighter;
+    font-size: 26px;
+    text-align: left;
 }
 
 .merchant-info {

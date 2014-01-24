@@ -11,4 +11,23 @@ $(document).ready(function(){
       $(".unlock-wrapper").slideUp(800);
     }
   });
+
+  $(".box1").on("click", function(){
+    $(".m3").fadeOut();
+    $(".m2").fadeOut();
+    
+    $(".m1").fadeIn();
+  });
+
+  $(".box2").on("click", function(){
+    $(".m3").fadeOut();
+    $(".m1").fadeOut();
+    $(".m2").fadeIn();
+  });
+
+  $(".box3").on("click", function(){
+    $(".m1").fadeOut();
+    $(".m2").fadeOut();
+    $(".m3").fadeIn();
+  });
 });
