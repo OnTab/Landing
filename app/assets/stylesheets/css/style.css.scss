@@ -205,7 +205,7 @@ input, .btn {
 }
 
 .unlock-wrapper h1 {
-    margin-bottom: -70px;
+    margin: 3px 0px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
 
@@ -230,23 +230,31 @@ input, .btn {
 }
 
 .t-circle-inner {
-    border: 6px inset rgba(0, 255, 174, 1);
-    filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  /* IE6,IE7 */
-    ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; /* IE8 */
-    -moz-transform: rotate(-180deg);  /* FF3.5+ */
-    -o-transform: rotate(-180deg);  /* Opera 10.5 */
-    -webkit-transform: rotate(-180deg);
-    -webkit-animation: rotation 3s linear infinite;
-    -moz-animation: rotation 3s linear infinite;
-    -ms-animation: rotation 3s linear infinite;
-    position: absolute;
-    left: 7px;
-    top: 7px;
-    background: rgba(255,255,255,0.5);
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
+    border: 6px solid #B9E2FF;
+position: absolute;
+left: 7px;
+top: 7px;
+background: #a1d0ff;
+background: -moz-linear-gradient(top, #a1d0ff 0%, #8ec4fa 44%, #77b5f3 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a1d0ff), color-stop(44%, #8ec4fa), color-stop(100%, #77b5f3));
+background: -webkit-linear-gradient(top, #a1d0ff 0%, #8ec4fa 44%, #77b5f3 100%);
+background: -o-linear-gradient(top, #a1d0ff 0%, #8ec4fa 44%, #77b5f3 100%);
+background: -ms-linear-gradient(top, #a1d0ff 0%, #8ec4fa 44%, #77b5f3 100%);
+background: linear-gradient(to bottom, #D2E6FA 0%, #ABD5FF 44%, #A8D3FE 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a1d0ff', endColorstr='#77b5f3',GradientType=0 );
+width: 125px;
+height: 125px;
+border-radius: 50%;
+box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68);
 }
+
+.t-circle-inner img {
+    position: absolute;
+    left: 17px;
+    top:25px;
+
+}
+
 @-webkit-keyframes rotation {
     0%   { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -279,6 +287,13 @@ input, .btn {
     border-radius: 50%;
 }
 
+.b-circle-inner img {
+    position: absolute;
+    left: 38px;
+    top:20px;
+    width: 50px;
+}
+
 .slider {
     width: 100%;
     position: absolute;
@@ -287,12 +302,22 @@ input, .btn {
 }
 
 .slider img {
-    width: 100%;
-    opacity: 0.6;
+    width: 80px;
+    position: relative;
+    left: 35px;
+    opacity: 0.9;
 }
 
 .slide-active {
     border: 6px dashed rgba(255, 255, 255, 1);
+}
+
+.checkmark {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: -90px;
+    width: 70px;
 }
 
 .top-slide-done {
@@ -312,6 +337,20 @@ input, .btn {
     animation-direction:reverse;
 -webkit-animation-direction:reverse; /* Safari and Chrome */
 }
+
+.brand {
+    max-width: 200px;
+    position: absolute;
+    left:50px;
+    top:50px;
+    z-index: 10;
+
+    img {
+    width: 100%;
+    }
+}
+
+
 
 
 /********************************************************************

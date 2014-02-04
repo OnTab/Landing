@@ -1,25 +1,26 @@
 <header>
 <div class="unlock-wrapper">
-  <h1>Drag to Unlock</h1>
+  <h1>Drop to Unlock</h1>
   <div class="unlock-inner">
-    <div class="t-circle-outer ui-widget-content">
-      <div class="t-circle-inner"></div>
+    <div class="t-circle-outer ui-widget-content float">
+      <div class="t-circle-inner"><%= image_tag("card3.png") %></div>
     </div>
 
     <div class="slider">
-      <%= image_tag("chevron3.png") %>
+      <%= image_tag("chevronb2.png") %>
     </div>
 
     <div class="b-circle-outer ui-widget-header">
-      <div class="b-circle-inner"></div>
+      <div class="b-circle-inner"><%= image_tag("carddrop.png") %></div>
     </div>
+    <%= image_tag("checkmark.png", :class => "checkmark") %>
   </div>
 </div>    
     <div class="container content h-container">
         <!-- Countdown start -->
         <div class="iphone">
             <div class="pic">
-                <%= image_tag("wire13.png")%>
+                <%= image_tag("wire18.png")%>
             </div>
             <h1 id="main-text">WE'RE GOING MOBILE</h1>
             <h3 id="second-text">Sign up for our waiting list to know when it is ready.</h3>
@@ -260,6 +261,9 @@
                         10 Dundas Street East<br>
                         Toronto, Ontario<br>
                         M5B 2G9
+                        <br>
+                        +1.888.225.1012 | 
+                        future@ontab.com
                     </p>                           
                 </div>
                 <div>
@@ -280,8 +284,8 @@
             $(document).ready(function() {
                 $('#countdown_dashboard').countDown({
                     targetDate: {
-                        'day': 28,
-                        'month': 2,
+                        'day': 18,
+                        'month': 3,
                         'year': 2014,
                         'hour': 12,
                         'min': 00,

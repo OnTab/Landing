@@ -411,8 +411,6 @@
   animation-name: hover;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
