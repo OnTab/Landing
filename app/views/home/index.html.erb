@@ -1,8 +1,8 @@
 <header>
 <div class="unlock-wrapper">
-  <h1>Drop to Unlock</h1>
+  <h1>Drag to Unlock</h1>
   <div class="unlock-inner">
-    <div class="t-circle-outer ui-widget-content float">
+    <div class="t-circle-outer ui-widget-content">
       <div class="t-circle-inner"><%= image_tag("card3.png") %></div>
     </div>
 
@@ -70,28 +70,24 @@
         <h2>Join The Waiting list</h2>
         
         <!-- Newsletter Form -->
-        <form id="n_letter" class="row" role="form" method="post" name="newsletter" action="newsletter.php">
+
+
+        <%= form_for(@customer, :remote => true) do |f| %>
+
             <div class="col-lg-4">
-                <!--[if lt IE 10]>
-                    <div class="ie-placeholder n-name">Name</div>
-                <![endif]-->
-                <input id="n_name" name="name" type="text" placeholder="Name" />
-                <div id='n_name_error' class="error">Name missing</div>
+                <%= f.text_field :name, :placeholder => "Name" %>
             </div>
+
             <div class="col-lg-5">
-                <!--[if lt IE 10]>
-                    <div class="ie-placeholder n-email">Email Address</div>
-                <![endif]-->
-                <input id="n_email" name="email" type="text" placeholder="Email Address" />
-                <div id='n_email_error' class="error">Email Address Missing</div>
+                <%= f.text_field :email, :placeholder => "Email" %>
             </div>
+
             <div class="col-lg-3">
-                <input id="subscribe_button" class="btn" type="submit" name="submit" value="NOTIFY ME">
-                <div id='n_success' class="success">YOU HAVE SUBSCRIBED SUCCESSFULLY</div>
-                <div id='n_fail' class="error">THIS EMAIL HAS ALREADY SUBSCRIBED!</div>
+                <%= f.submit "JOIN", :class => "btn waiting_submit" %>
+
             </div>
-        </form>
-        <!-- End Newsletter Form -->
+
+        <%end%>
         
     </div>
 </section>
@@ -168,46 +164,29 @@
                 </div>
                 <%= image_tag("chart.png") %>
             </div>
+
+            <div class="m4">
+                <div class="md">
+                    <h3>Join Now</h3>                   
+                </div>
+                
+            </div>
         </div>
         <div class="merch-ex">
-            <label class="merchant-info">Create an amazing payment experience for your customers</label>
+            <h3>Join Now</h3>
+            <div class="col-lg-6">
+            <%= form_for(@merchant, :remote => true) do |f| %>
+                        <%= f.text_field :email, :placeholder => "Email" %>
+                        <%= f.text_field :phone, :placeholder => "Phone Number" %>
+                        <%= f.text_field :processor, :placeholder => "Payment Processor" %>
+                        <%= f.text_field :merch_id, :placeholder => "Merchant Account Number" %>
+                        <%= f.text_field :terminal_id, :placeholder => "Terminal ID" %>
+                        <%= f.submit "Submit", class: 'btn merch-submit' %>
+                    <%end%>
+            </div>
         </div>
-
-        <!-- <div class='merch-details'>
-            <h4>Give your terminal the power of mobile, and accept mobile payments as well as card payments on your existing payment terminal at no additional cost.</h4>
-        </div> -->
-
-
-
-        <!-- <div class="belt">
-            <div class="conveyor">
-
-            </div>
-            <div class="conveyor">
-
-            </div>
-            <div class="conveyor">
-
-            </div>
-            <div class="conveyor">
-
-            </div>
-            <div class="conveyor">
-
-            </div>
-        </div> -->
     </div>
 </section>
-<!--  -->
-
-<!-- <section id="merchant">
-    <div class="container content">
-        <h2>MERCHANTS</h2>
-
-        <p></p>
-
-    </div>
-</section> -->
 <!-- End Features Section -->
         
 <!-- End About Section -->

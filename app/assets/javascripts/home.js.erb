@@ -18,21 +18,25 @@ $(document).ready(function(){
   });
 
   $(".box1").on("click", function(){
+    $(".m4").fadeOut();
     $(".m3").fadeOut();
     $(".m2").fadeOut();
-    
     $(".m1").fadeIn();
   });
 
   $(".box2").on("click", function(){
+    $(".m4").fadeOut();
     $(".m3").fadeOut();
     $(".m1").fadeOut();
     $(".m2").fadeIn();
   });
 
   $(".box3").on("click", function(){
+    $(".m4").fadeOut();
     $(".m1").fadeOut();
     $(".m2").fadeOut();
     $(".m3").fadeIn();
   });
+
+
 });
